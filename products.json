@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Линзы AirOptix",
+    "image": "https://via.placeholder.com/280x160?text=AirOptix",
+    "description": "Комфортные линзы на каждый день",
+    "options": [
+      { "diopter": -1.0, "price": 500 },
+      { "diopter": -1.5, "price": 520 },
+      { "diopter": -2.0, "price": 540 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Линзы Acuvue",
+    "image": "https://via.placeholder.com/280x160?text=Acuvue",
+    "description": "Линзы для чувствительных глаз",
+    "options": [
+      { "diopter": -1.0, "price": 600 },
+      { "diopter": -2.5, "price": 640 },
+      { "diopter": -3.0, "price": 660 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Очки AntiBlue",
+    "image": "https://via.placeholder.com/280x160?text=AntiBlue",
+    "description": "Фильтруют синий свет",
+    "options": [
+      { "diopter": 0.0, "price": 950 },
+      { "diopter": 1.0, "price": 980 },
+      { "diopter": 1.5, "price": 1000 }
+    ]
+  }
+]
