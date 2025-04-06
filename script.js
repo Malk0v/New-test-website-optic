@@ -27,7 +27,7 @@ function renderProducts(products) {
         ${product.options
           .map(
             (opt) => `
-          <option value="${opt.diopter}" data-price="${opt.price}">${opt.diopter} дптр — ${opt.price}₽</option>
+          <option value="${opt.diopter}" data-price="${opt.price}">${opt.diopter} дптр — ${opt.price}грн</option>
         `
           )
           .join("")}
@@ -59,10 +59,10 @@ function openCart() {
     total += item.price;
     const div = document.createElement("div");
     div.className = "cart-item";
-    div.innerText = `${item.name} (${item.diopter} дптр) — ${item.price}₽`;
+    div.innerText = `${item.name} (${item.diopter} дптр) — ${item.price}грн`;
     cartItems.appendChild(div);
   });
-  totalSum.innerText = `Сумма: ${total}₽`;
+  totalSum.innerText = `Сумма: ${total}грн`;
   modal.style.display = "block";
 }
 function closeCart() {
@@ -72,8 +72,8 @@ function sendOrder() {
   if (cart.length === 0) return alert("Корзина пуста!");
   const message =
     cart
-      .map((item) => `${item.name} (${item.diopter} дптр) — ${item.price}₽`)
-      .join("%0A") + `%0AИтого: ${cart.reduce((s, i) => s + i.price, 0)}₽`;
+      .map((item) => `${item.name} (${item.diopter} дптр) — ${item.price}грн`)
+      .join("%0A") + `%0AИтого: ${cart.reduce((s, i) => s + i.price, 0)}грн`;
 
   const TOKEN = "7891353623:AAHcw3UdOk4BgEoiB3HaIr4x0UhcDsJAXUs";
   const CHAT_ID = "-1002333743964";
