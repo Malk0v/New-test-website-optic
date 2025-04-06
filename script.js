@@ -75,8 +75,8 @@ function sendOrder() {
       .map((item) => `${item.name} (${item.diopter} дптр) — ${item.price}₽`)
       .join("%0A") + `%0AИтого: ${cart.reduce((s, i) => s + i.price, 0)}₽`;
 
-  const TOKEN = "YOUR_BOT_TOKEN";
-  const CHAT_ID = "YOUR_CHAT_ID";
+  const TOKEN = "7891353623:AAHcw3UdOk4BgEoiB3HaIr4x0UhcDsJAXUs";
+  const CHAT_ID = "-1002333743964";
   const url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}`;
 
   fetch(url).then((res) => {
