@@ -5,12 +5,13 @@ body {
   color: #333;
 }
 header {
-  background: #007bff;
-  color: white;
+  background: #27065c;
+  color: rgb(179, 171, 171);
   padding: 20px;
   text-align: center;
 }
 .container {
+  text-align: center;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
@@ -22,13 +23,14 @@ header {
   justify-content: center;
 }
 .card {
-  background: white;
+  background: rgba(225, 221, 221, 0.399);
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.1);
   width: 280px;
 }
 .card img {
+  align-items: center;
   width: 100%;
   border-radius: 8px;
 }
@@ -91,8 +93,8 @@ header {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #ff6600;
-  color: white;
+  background: #ffcc00;
+  color: rgb(216, 11, 11);
   padding: 10px 15px;
   border: none;
   border-radius: 50px;

@@ -20,7 +20,7 @@ function renderProducts(products) {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
+      <img src="${product.image}" alt="${product.name}" "width="15%" >
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <select>
