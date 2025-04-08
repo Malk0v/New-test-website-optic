@@ -16,9 +16,15 @@
     "image": "./images/IMG_0370.jpg",
     "description": "Стильные и легкие очки",
     "options": [
-      { "diopter": -1.0, "price": 600 },
-      { "diopter": -2.5, "price": 640 },
-      { "diopter": -3.0, "price": 660 }
+      { "diopter": 1.0, "price": 600 },
+      { "diopter": 2.0, "price": 640 },
+      { "diopter": 3.0, "price": 660 },
+      { "diopter": 4.0, "price": 640 },
+      { "diopter": 5.0, "price": 660 },
+      { "diopter": 6.5, "price": 640 },
+      { "diopter": 7.0, "price": 660 },
+      { "diopter": 8.5, "price": 640 },
+      { "diopter": 9.0, "price": 660 }
     ]
   },
   {

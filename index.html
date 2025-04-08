@@ -2,47 +2,48 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Интернет-магазин оптики. Контактные линзы, очки, быстрая доставка и удобный выбор диоптрий."
-    />
-    <meta
-      name="keywords"
-      content="линзы, очки, контактные линзы, оптика, магазин линз, купить очки"
-    />
-    <title>Интернет-магазин оптики</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оптика</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Интернет-магазин оптики</h1>
-      <p>Очки с выбором диоптрий</p>
-    </header>
+    <header><h1>Интернет-магазин оптики</h1></header>
+    <div class="container">
+      <div id="product-list" class="products"></div>
+    </div>
+    <button id="cart-button">🛒</button>
 
-    <button class="cart-button" id="cart-button">🛒 Корзина</button>
-
-    <main class="container">
-      <section class="products" id="product-list"></section>
-    </main>
-
-    <!-- Модальное окно корзины -->
-    <div class="modal" id="cart-modal">
+    <div id="cart-modal" class="modal">
       <div class="modal-content">
         <span class="close" id="close-cart">&times;</span>
         <h2>Корзина</h2>
         <div id="cart-items"></div>
-        <div class="cart-total" id="total-sum">Сумма: 0₽</div>
+        <div class="cart-total" id="total-sum"></div>
+        <h3>Оформление заказа</h3>
+        <input
+          type="text"
+          id="user-name"
+          placeholder="Имя и Фамилия"
+          required
+        />
+        <input type="tel" id="user-phone" placeholder="Телефон" required />
+        <textarea
+          id="user-note"
+          placeholder="Комментарий (необязательно)"
+        ></textarea>
         <button class="send-order" id="send-order">Отправить заказ</button>
       </div>
     </div>
 
     <footer class="container">
-      <h3>Контакты</h3>
+      <h3>Контакты и социальные сети</h3>
       <a href="mailto:optics@example.com">Наша почта</a>
       <br />
       <br />
       <a href="@your_shop_name">Telegram</a>
+      <br />
+      <br />
+      <a href="instagram/">Наш инстаграм</a>
       <br />
       <br />
       <a href="tel:0 66 01 85 845">Позвонить для консультации</a>
@@ -54,7 +55,6 @@
         >
       </p>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
