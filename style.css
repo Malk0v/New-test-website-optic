@@ -76,6 +76,7 @@ button:hover {
   border-radius: 40px;
   transition-duration: 1s;
 }
+
 #cart-button:hover {
   background: rgb(73, 125, 115);
   transition-duration: 1s;
@@ -154,4 +155,12 @@ textarea {
 }
 .send-order:hover {
   background: #218838;
+}
+
+@media screen and (min-width: 800px) {
+  #cart-button {
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 20px;
+  }
 }
